@@ -1,0 +1,46 @@
+public class Fila {
+    private int primeiro;
+    private int ultimo;
+    private int dados[];
+
+    public Fila  (int dados[]){
+        ultimo = -1;
+        primeiro = 0;
+    }
+    private int inserir (int dados){
+        primeiro ++;
+        dados [primeiro] = primeiro;
+        return primeiro;
+    }
+
+    private int remover (int ultimo){
+        primeiro --;
+        dados [primeiro] = primeiro;
+        return primeiro;
+    }
+    private void imprimir (int dados){
+        System.out.printf(Fila);
+    }
+
+    private int vazia (int capacidade){
+        if (primeiro ==0) {
+            System.out.print("A pilha está vazia");
+        }
+        return capacidade;
+    }
+    private int cheia(int capacidade){
+        if (primeiro == capacidade){
+            System.out.print("a pilha está cheia");
+        }
+        return capacidade;
+    }
+    public  void main(String[] args) {
+        inserir(10);
+        remover(10);
+        imprimir(10);
+        vazia(10);
+        cheia(15);
+        
+
+    }
+}
